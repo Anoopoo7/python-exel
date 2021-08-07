@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department</title>
+</head>
+
+<body>
+    <div>
+        <form action="/" method="post">
+            {% csrf_token %}
+            <h1>Register</h1>
+            <table>
+                <tr>
+                    <td>
+                        <label for="input1">Department name</label>
+                    </td>
+                    <td>
+                        <select name="department" id="input1">
+                            <option value="ec">Electro</option>
+                            <option value="IT">IT</option>
+                            <option value="Mech">Mechanic</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="input2">faculty</label>
+                    </td>
+                    <td>
+                        <input type="text" id="input2" name="faculty">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Submit</button>
+                        <button href = "../table.csv">Export</button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+
+</html>

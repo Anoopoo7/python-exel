@@ -1,0 +1,10 @@
+hi sis..,
+
+1) first cofigure the settings.py file database section, i created the database as 'dpt_table'
+   if you  need create your own schema and put it here or create a new database named "dpt_table" as like me :)
+
+2) run 'python manage.py makemigration' and 'python manage.py migrate' as well.
+
+3) uncomment model.save() from views.py (line no.13)
+
+4) delete this file before you submit.
